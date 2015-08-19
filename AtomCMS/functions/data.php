@@ -35,7 +35,7 @@ function data_page($dbc, $id) {
 		
 		$data['body_formatted'] = $data['body'];
 	}
-	
+
 	return $data;
 		
 }

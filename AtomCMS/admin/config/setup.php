@@ -32,6 +32,12 @@ if (isset($_GET['page'])) {
 // Page Setup
 $page = data_page($dbc, $pageid); // Page Array
 
+if(isset($_GET['id'])) {
+	
+	$opened = data_page($dbc, $_GET['id']);
+	
+}
+
 // User Setup
 $user = data_user($dbc, $_SESSION['username']); // User Array
 
